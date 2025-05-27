@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Premium Shop | Fashion Fusion</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="shop_now.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .brand-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .recent-box {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .hero-premium {
+      background: url('feature1.avif') center/cover no-repeat;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <nav class="flex justify-start items-center p-4 gap-4 ">
+    <span class="text-4xl text-blue-600 "><i class="fa-solid fa-shirt"></i></span>
+    <h1 class="text-[32px] font-bold text-gray-700 ">Fashion Fusion</h1>
+    <div class="text-white text-center space-x-10 px-[100px] text-[16px] ">
+        <a href="#home" class="nav-link text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#luxury" class="nav-link text-gray-700 hover:text-blue-600">Shop</a>
+        <a href="#collection" class="nav-link text-gray-700 hover:text-blue-600">New Arrivals</a>
+        <a href="#testimonial" class="nav-link text-gray-700 hover:text-blue-600">Collections</a>
+    </div>
+    <input type="text" placeholder="Search" class="w-[180px] h-[40px] rounded-full border-2 border-gray-300 p-3">
+    <span class="text-2xl text-gray-500 ps-[10px]"><i class="fa-solid fa-cart-shopping"></i></span>
+  </nav>
+
+ 
+  <section class="hero is-medium is-bold hero-premium text-white flex items-center justify-center text-center">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-2 has-text-white">Premium Brands Shop</h1>
+        <p class="subtitle is-5 has-text-white">Explore the most luxurious and trending collections now</p>
+        <a class="button is-white is-normal mt-4" href="#shop">
+          <i class="fas fa-shopping-cart"></i>&nbsp; Shop Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="shop" class="section">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered mb-6">Trending Brands</h2>
+      <div class="columns is-multiline">
+        
+        <div class="column is-4">
+          <div class="card brand-card transition duration-300">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="Gucci.jpg" alt="Gucci">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Gucci</p>
+              <p class="subtitle is-6">Italian elegance in every thread.<br>Come here and access smelling and clean clothes.</p>
+              <button class="button is-link is-fullwidth">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-4">
+          <div class="card brand-card transition duration-300">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="chanel.jpg" alt="Gucci">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Chanel</p>
+              <p class="subtitle is-6">American elegance in every thread.<br>High quality , well styled, and modern timeline clothes.</p>
+              <button class="button is-link is-fullwidth">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-4">
+          <div class="card brand-card transition duration-300">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="Home_image.avif" alt="Gucci">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Nike</p>
+              <p class="subtitle is-6">South African elegance in every thread.<br>Popular and common among people. Cleanlines is priority.</p>
+              <button class="button is-link is-fullwidth">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section has-background-light">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered mb-6">Add a New Trending Brand</h2>
+      <div class="columns is-centered">
+        <div class="column is-6">
+          <form class="box">
+            <div class="field">
+              <label class="label">Brand Name</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="e.g. Zara Gucci">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Description</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Short description..."></textarea>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Upload Image</label>
+              <div class="control">
+                <input class="input" type="file">
+              </div>
+            </div>
+            <div class="field is-grouped is-grouped-right">
+              <div class="control">
+                <button class="button is-link">Add Brand</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered mb-6">Recent Purchases</h2>
+      <div class="columns is-multiline">
+        <div class="column is-4">
+          <div class="recent-box">
+            <p class="title is-5 mb-32">Gucci Jacket</p>
+            <figure class="image is-4by3 mb-5">
+                <img src="Zara.jpg" alt="Gucci">
+            </figure>
+            <p class="subtitle is-6">Purchased by <strong>Alice</strong> - 2 hours ago</p>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="recent-box">
+            <p class="title is-5 mb-32">Louis Vuitton Shoes</p>
+            <figure class="image is-4by3 mb-5">
+                <img src="Air.jpg" alt="Gucci">
+            </figure>
+            <p class="subtitle is-6">Purchased by <strong>Brian</strong> - 1 day ago</p>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="recent-box">
+            <p class="title is-5 mb-3">Chanel Bag</p>
+            <figure class="image is-4by3 mb-5">
+                <img src="white_shoes.jpg" alt="Gucci">
+            </figure>
+            <p class="subtitle is-6">Purchased by <strong>Diane</strong> - 3 days ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="p-4 has-background-dark has-text-white-bis">
+    <div class="content has-text-centered">
+      <h3 class="text-white">Fashion Fusion</h3>
+      <p>Explore the most luxurious and trending collections now<br>High quality , well styled, and modern timeline clothes.</p>
+      <div class="text-white text-center space-x-10 px-[100px] text-[16px] ">
+        <h3 class="text-white ">Quick Links</h3>
+        <a href="#home" class="nav-link text-white hover:text-blue-600">Home</a>
+        <a href="#luxury" class="nav-link text-white hover:text-blue-600">Shop</a>
+        <a href="#collection" class="nav-link text-white hover:text-blue-600">New Arrivals</a>
+        <a href="#testimonial" class="nav-link text-white hover:text-blue-600">Collections</a>
+      </div>
+      <p>
+        <strong>Fashion Fusion</strong> © 2025. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
