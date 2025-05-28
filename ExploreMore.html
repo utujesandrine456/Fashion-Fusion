@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <style>
+        .body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        .brand-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .brand-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+        }
+
+        .btn-outline-primary {
+            border-width: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-primary:hover, .btn-outline-secondary {
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(13, 110, 253, 0.2);
+        }
+
+
+        /* Latest Collections Styles */
+        .collection-card {
+            transition: transform 0.3s ease;
+        }
+
+        .collection-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .collection-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+        }
+
+        /* New Arrivals Styles */
+        .product-card {
+            background: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .product-actions {
+            opacity: 0;
+            transform: translateX(20px);
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover .product-actions {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .product-actions .btn {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .product-actions .btn:hover {
+            background-color: #0d6efd;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class=" body container-fluid">
+        <div class="row">
+            <nav class="d-flex align-items-center px-5 py-3 gap-3 container-fluid">
+                <span class="fs-1 text-primary "><i class="fa-solid fa-shirt"></i></span>
+                <h1 class="fs-2 fw-bold text-secondary">Fashion Fusion</h1>
+                <div class="text-white text-center d-flex  gap-4 ms-auto">
+                    <a href="#home" class="nav-link text-secondary hover:text-primary">Home</a>
+                    <a href="#luxury" class="nav-link text-secondary hover:text-primary">Shop</a>
+                    <a href="#collection" class="nav-link text-secondary hover:text-primary">New Arrivals</a>
+                    <a href="#testimonial" class="nav-link text-secondary hover:text-primary">Collections</a>
+                </div>
+                <input type="text" placeholder="Search" class="form-control rounded-pill-secondary mx-3" style="width:180px; height: 40px; padding: 10px;">
+                <span class="fs-4 text-muted ps-2"><i class="fa-solid fa-cart-shopping"></i></span>
+            </nav>
+        </div>
+
+        <div class="row">
+            <div class="text-center position-relative">
+                <img src="./woman_smile.jpg" alt="Home Image" class="img-fluid w-100" style="height: 100vh; object-fit: cover;">
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <h1 class="text-black fw-bold fs-1">Explore Fashion <span class="text-primary">Without Limits</span></h1>
+                    <p class="text-white fs-5">Discover trending brands, latest collections, and popular picks from top designers worldwide.</p>
+                    <button class="btn btn-primary rounded px-4 py-3 fs-5">Shop Now</button>
+                    <button class="btn btn-outline-primary border-2 text-white bg-opacity-25 rounded px-2 py-3 fs-5">View Lookbook</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row bg-opacity-10 bg-primary p-4">
+            <h2 class="px-4 py-5 fs-1 fw-bold">Shop By Category</h2>
+            <div class="d-flex gap-2 justify-content-start ">
+                <a href="#" class="bg-primary text-white py-2 px-4 rounded-pill text-decoration-none">All</a>
+                <a href="#" class="bg-white text-black py-2 px-4 rounded-pill text-decoration-none">Clothing</a>
+                <a href="#" class="bg-white text-black py-2 px-4 rounded-pill text-decoration-none">Accessories</a>
+                <a href="#" class="bg-white text-black py-2 px-4 rounded-pill text-decoration-none">Shoes</a>
+                <a href="#" class="bg-white text-black py-2 px-4 rounded-pill text-decoration-none">Hats</a>
+                <a href="#" class="bg-white text-black py-2 px-4 rounded-pill text-decoration-none">Bags</a>
+            </div>
+
+            <h3 class="px-4 py-5 fs-2 fw-bold">Trending Brands</h3>
+            <div class="row px-4">
+                <div class="col-lg-3 col-md-6 mb-4 ">
+                    <div class="card brand-card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-img-wrapper">
+                            <img src="./Chanel1.jpg" alt="Zara Collection" class="card-img-top  rounded-top-4 rounded-right-4" style="height: 200px; object-fit: cover;">
+                            
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3 ">Chanel</h5>
+                            <p class="card-text text-muted">Elevate your style with Zara's latest collection of fashion pieces.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-primary fw-bold">From $49.99</span>
+                                <button class="btn btn-outline-primary rounded-pill px-3">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card brand-card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-img-wrapper ">
+                            <img src="./cc.jpg" alt="Gucci Collection" class="card-img-top rounded-top-4 rounded-right-4" style=" height: 200px; object-fit: cover;">
+    
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Gucci</h5>
+                            <p class="card-text text-muted">Discover luxury fashion with Gucci's iconic designs and premium quality.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-primary fw-bold">From $2.99</span>
+                                <button class="btn btn-outline-primary rounded-pill px-3">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card brand-card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-img-wrapper">
+                            <img src="./prada.jpg" alt="Nike Collection" class="card-img-top rounded-top-4 rounded-right-4" style=" height: 200px; object-fit: cover;">
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Prada</h5>
+                            <p class="card-text text-muted">Experience innovation and comfort with Nike's athletic wear collection.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-primary fw-bold">From $79.99</span>
+                                <button class="btn btn-outline-primary rounded-pill px-3">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card brand-card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-img-wrapper">
+                            <img src="./balenciaga.jpg" alt="Adidas Collection" class="card-img-top rounded-top-4 rounded-right-4" style="height: 200px; object-fit: cover;">
+                            
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Balenciaga</h5>
+                            <p class="card-text text-muted">Style meets performance with Adidas' premium sportswear collection.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-primary fw-bold">From $59.99</span>
+                                <button class="btn btn-outline-primary rounded-pill px-3">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Latest Collections Section -->
+        <div class="container-fluid py-5 bg-light">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-5">
+                    <h2 class="fs-1 fw-bold">Latest Collections</h2>
+                    <a href="#" class="text-primary text-decoration-none">View All <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="collection-card position-relative rounded-4 overflow-hidden">
+                            <img src="./man.jpg" alt="Summer Collection" class="w-100" style="height: 500px; object-fit: cover;">
+                            <div class="collection-overlay p-5">
+                                <h3 class="text-white display-5 fw-bold mb-3">Summer Vibes</h3>
+                                <p class="text-white-300 mb-4">Discover our latest summer collection featuring breathable fabrics and vibrant colors.</p>
+                                <button class="btn btn-light rounded-pill px-4 py-2 fw-bold">Explore Collection</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="collection-card position-relative rounded-4 overflow-hidden">
+                                    <img src="./woman_smile.jpg" alt="Casual Collection" class="w-100" style="height: 240px; object-fit: cover;">
+                                    <div class="collection-overlay p-4">
+                                        <h4 class="text-white fw-bold mb-2">Weekend Essentials</h4>
+                                        <p class="text-white-300 mb-3">Perfect for your weekend adventures</p>
+                                        <button class="btn btn-light btn-sm rounded-pill px-3 py-2 fw-bold">Shop Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="collection-card position-relative rounded-4 overflow-hidden">
+                                    <img src="./man.jpg" alt="Formal Collection" class="w-100" style="height: 240px; object-fit: cover;">
+                                    <div class="collection-overlay p-4">
+                                        <h4 class="text-white fw-bold mb-2">Winter Collection</h4>
+                                        <p class="text-white-300 mb-3">Professional attire for the modern workplace</p>
+                                        <button class="btn btn-light btn-sm rounded-pill px-3 py-2 fw-bold">Shop Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Arrivals Section -->
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-5">
+                    <h2 class="fs-1 fw-bold">New Arrivals</h2>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-outline-primary rounded-pill px-4">All</button>
+                        <button class="btn btn-outline-secondary text-black rounded-pill px-4 border-2">Men</button>
+                        <button class="btn btn-outline-secondary text-black rounded-pill px-4 border-2">Women</button>
+                        <button class="btn btn-outline-secondary text-black rounded-pill px-4 border-2">Accessories</button>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-card rounded-4 overflow-hidden">
+                            <div class="position-relative">
+                                <img src="./man.jpg" alt="Product" class="w-100" style="height: 350px; object-fit: cover;">
+                                <div class="product-actions position-absolute top-0 end-0 p-3">
+                                    <button class="btn btn-light rounded-circle mb-2"><i class="fas fa-heart"></i></button>
+                                    <button class="btn btn-light rounded-circle"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <span class="badge bg-danger position-absolute top-0 start-0 m-3">New</span>
+                            </div>
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h5 class="mb-0 fw-bold">Classic Denim Jacket</h5>
+                                    <span class="text-primary fw-bold">$89.99</span>
+                                </div>
+                                <p class="text-muted mb-3">Premium quality denim with modern fit</p>
+                                <div class="d-flex gap-2">
+                                    <span class="badge bg-light text-dark">S</span>
+                                    <span class="badge bg-light text-dark">M</span>
+                                    <span class="badge bg-light text-dark">L</span>
+                                    <span class="badge bg-light text-dark">XL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-card rounded-4 overflow-hidden">
+                            <div class="position-relative">
+                                <img src="./man.jpg" alt="Product" class="w-100" style="height: 350px; object-fit: cover;">
+                                <div class="product-actions position-absolute top-0 end-0 p-3">
+                                    <button class="btn btn-light rounded-circle mb-2"><i class="fas fa-heart"></i></button>
+                                    <button class="btn btn-light rounded-circle"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <span class="badge bg-success position-absolute top-0 start-0 m-3">Sale</span>
+                            </div>
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h5 class="mb-0 fw-bold">Leather Crossbody Bag</h5>
+                                    <span class="text-primary fw-bold">$129.99</span>
+                                </div>
+                                <p class="text-muted mb-3">Genuine leather with adjustable strap</p>
+                                <div class="d-flex gap-2">
+                                    <span class="badge bg-light text-dark">One Size</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-card rounded-4 overflow-hidden">
+                            <div class="position-relative">
+                                <img src="./man.jpg" alt="Product" class="w-100" style="height: 350px; object-fit: cover;">
+                                <div class="product-actions position-absolute top-0 end-0 p-3">
+                                    <button class="btn btn-light rounded-circle mb-2"><i class="fas fa-heart"></i></button>
+                                    <button class="btn btn-light rounded-circle"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h5 class="mb-0 fw-bold">Premium Sneakers</h5>
+                                    <span class="text-primary fw-bold">$149.99</span>
+                                </div>
+                                <p class="text-muted mb-3">Comfortable and stylish everyday wear</p>
+                                <div class="d-flex gap-2">
+                                    <span class="badge bg-light text-dark">40</span>
+                                    <span class="badge bg-light text-dark">41</span>
+                                    <span class="badge bg-light text-dark">42</span>
+                                    <span class="badge bg-light text-dark">43</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-card rounded-4 overflow-hidden">
+                            <div class="position-relative">
+                                <img src="./man.jpg" alt="Product" class="w-100" style="height: 350px; object-fit: cover;">
+                                <div class="product-actions position-absolute top-0 end-0 p-3">
+                                    <button class="btn btn-light rounded-circle mb-2"><i class="fas fa-heart"></i></button>
+                                    <button class="btn btn-light rounded-circle"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <span class="badge bg-warning position-absolute top-0 start-0 m-3">Limited</span>
+                            </div>
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h5 class="mb-0 fw-bold">Designer Watch</h5>
+                                    <span class="text-primary fw-bold">$299.99</span>
+                                </div>
+                                <p class="text-muted mb-3">Luxury timepiece with premium finish</p>
+                                <div class="d-flex gap-2">
+                                    <span class="badge bg-light text-dark">One Size</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
