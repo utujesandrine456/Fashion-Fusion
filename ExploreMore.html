@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="favicon.png">
 
     <style>
         .body{
@@ -36,14 +37,14 @@
             transition: all 0.3s ease;
         }
 
-        .btn-outline-primary:hover, .btn-outline-secondary {
+        .btn-outline-primary:hover, .btn-outline-secondary:hover{
             color: white;
             transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(13, 110, 253, 0.2);
         }
 
 
-        /* Latest Collections Styles */
+
         .collection-card {
             transition: transform 0.3s ease;
         }
@@ -61,7 +62,10 @@
             color: white;
         }
 
-        /* New Arrivals Styles */
+        .link1:hover, .link2:hover, .link2:hover{
+            color: white
+        }
+        
         .product-card {
             background: white;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -96,6 +100,8 @@
             background-color: #0d6efd;
             color: white;
         }
+
+
     </style>
 </head>
 <body>
@@ -103,14 +109,14 @@
         <div class="row">
             <nav class="d-flex align-items-center px-5 py-3 gap-3 container-fluid">
                 <span class="fs-1 text-primary "><i class="fa-solid fa-shirt"></i></span>
-                <h1 class="fs-2 fw-bold text-secondary">Fashion Fusion</h1>
-                <div class="text-white text-center d-flex  gap-4 ms-auto">
-                    <a href="#home" class="nav-link text-secondary hover:text-primary">Home</a>
-                    <a href="#luxury" class="nav-link text-secondary hover:text-primary">Shop</a>
-                    <a href="#collection" class="nav-link text-secondary hover:text-primary">New Arrivals</a>
-                    <a href="#testimonial" class="nav-link text-secondary hover:text-primary">Collections</a>
+                <h1 class="fs-2 fw-bold text-dark">Fashion Fusion</h1>
+                <div class="text-white text-center d-flex  gap-4 mx-auto">
+                    <a href="#home" class="nav-link text-secondary hover:text-primary fw-semibold">Home</a>
+                    <a href="#luxury" class="nav-link text-secondary hover:text-primary fw-semibold">Shop</a>
+                    <a href="#collection" class="nav-link text-secondary hover:text-primary fw-semibold">New Arrivals</a>
+                    <a href="#testimonial" class="nav-link text-secondary hover:text-primary fw-semibold">Collections</a>
                 </div>
-                <input type="text" placeholder="Search" class="form-control rounded-pill-secondary mx-3" style="width:180px; height: 40px; padding: 10px;">
+                <input type="text" placeholder="Search" class="form-control rounded-5-secondary mx-3" style="width:180px; height: 40px; padding: 10px;">
                 <span class="fs-4 text-muted ps-2"><i class="fa-solid fa-cart-shopping"></i></span>
             </nav>
         </div>
@@ -121,8 +127,8 @@
                 <div class="position-absolute top-50 start-50 translate-middle">
                     <h1 class="text-black fw-bold fs-1">Explore Fashion <span class="text-primary">Without Limits</span></h1>
                     <p class="text-white fs-5">Discover trending brands, latest collections, and popular picks from top designers worldwide.</p>
-                    <button class="btn btn-primary rounded px-4 py-3 fs-5">Shop Now</button>
-                    <button class="btn btn-outline-primary border-2 text-white bg-opacity-25 rounded px-2 py-3 fs-5">View Lookbook</button>
+                    <button class="btn bg-white rounded px-4 py-3 fs-5">Shop Now</button>
+                    <button class="btn bg-transparent border-2 border-white text-white rounded px-2 py-3 fs-5">View Lookbook</button>
                 </div>
             </div>
         </div>
@@ -143,7 +149,7 @@
                 <div class="col-lg-3 col-md-6 mb-4 ">
                     <div class="card brand-card h-100 border-0 shadow-sm rounded-4">
                         <div class="card-img-wrapper">
-                            <img src="./Chanel1.jpg" alt="Zara Collection" class="card-img-top  rounded-top-4 rounded-right-4" style="height: 200px; object-fit: cover;">
+                            <img src="./watch.jpg" alt="Zara Collection" class="card-img-top  rounded-top-4 rounded-right-4" style="height: 200px; object-fit: cover;">
                             
                         </div>
                         <div class="card-body p-4">
@@ -159,7 +165,7 @@
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card brand-card h-100 border-0 shadow-sm rounded-4">
                         <div class="card-img-wrapper ">
-                            <img src="./cc.jpg" alt="Gucci Collection" class="card-img-top rounded-top-4 rounded-right-4" style=" height: 200px; object-fit: cover;">
+                            <img src="./cc_bag.jpg" alt="Gucci Collection" class="card-img-top rounded-top-4 rounded-right-4" style=" height: 200px; object-fit: cover;">
     
                         </div>
                         <div class="card-body p-4">
@@ -175,7 +181,7 @@
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card brand-card h-100 border-0 shadow-sm rounded-4">
                         <div class="card-img-wrapper">
-                            <img src="./prada.jpg" alt="Nike Collection" class="card-img-top rounded-top-4 rounded-right-4" style=" height: 200px; object-fit: cover;">
+                            <img src="./prada1.jpg" alt="Nike Collection" class="card-img-top rounded-top-4 rounded-right-4" style=" height: 200px; object-fit: cover;">
                         </div>
                         <div class="card-body p-4">
                             <h5 class="card-title fw-bold mb-3">Prada</h5>
@@ -190,8 +196,7 @@
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card brand-card h-100 border-0 shadow-sm rounded-4">
                         <div class="card-img-wrapper">
-                            <img src="./balenciaga.jpg" alt="Adidas Collection" class="card-img-top rounded-top-4 rounded-right-4" style="height: 200px; object-fit: cover;">
-                            
+                            <img src="./prada2.jpg" alt="Adidas Collection" class="card-img-top rounded-top-4 rounded-right-4" style="height: 200px; object-fit: cover;">
                         </div>
                         <div class="card-body p-4">
                             <h5 class="card-title fw-bold mb-3">Balenciaga</h5>
@@ -207,7 +212,7 @@
             
         </div>
 
-        <!-- Latest Collections Section -->
+        
         <div class="container-fluid py-5 bg-light">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center mb-5">
@@ -217,7 +222,7 @@
                 <div class="row g-4">
                     <div class="col-lg-6">
                         <div class="collection-card position-relative rounded-4 overflow-hidden">
-                            <img src="./man.jpg" alt="Summer Collection" class="w-100" style="height: 500px; object-fit: cover;">
+                            <img src="./summer2.jpg" alt="Summer Collection" class="w-100" style="height: 500px; object-fit: cover;">
                             <div class="collection-overlay p-5">
                                 <h3 class="text-white display-5 fw-bold mb-3">Summer Vibes</h3>
                                 <p class="text-white-300 mb-4">Discover our latest summer collection featuring breathable fabrics and vibrant colors.</p>
@@ -229,7 +234,7 @@
                         <div class="row g-4">
                             <div class="col-12">
                                 <div class="collection-card position-relative rounded-4 overflow-hidden">
-                                    <img src="./woman_smile.jpg" alt="Casual Collection" class="w-100" style="height: 240px; object-fit: cover;">
+                                    <img src="./weekend.jpg" alt="Casual Collection" class="w-100" style="height: 240px; object-fit: cover;">
                                     <div class="collection-overlay p-4">
                                         <h4 class="text-white fw-bold mb-2">Weekend Essentials</h4>
                                         <p class="text-white-300 mb-3">Perfect for your weekend adventures</p>
@@ -239,7 +244,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="collection-card position-relative rounded-4 overflow-hidden">
-                                    <img src="./man.jpg" alt="Formal Collection" class="w-100" style="height: 240px; object-fit: cover;">
+                                    <img src="./wiinter.jpg" alt="Formal Collection" class="w-100" style="height: 240px; object-fit: cover;">
                                     <div class="collection-overlay p-4">
                                         <h4 class="text-white fw-bold mb-2">Winter Collection</h4>
                                         <p class="text-white-300 mb-3">Professional attire for the modern workplace</p>
@@ -253,28 +258,29 @@
             </div>
         </div>
 
-        <!-- New Arrivals Section -->
+        
         <div class="container-fluid py-5">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center mb-5">
                     <h2 class="fs-1 fw-bold">New Arrivals</h2>
                     <div class="d-flex gap-3">
-                        <button class="btn btn-outline-primary rounded-pill px-4">All</button>
-                        <button class="btn btn-outline-secondary text-black rounded-pill px-4 border-2">Men</button>
-                        <button class="btn btn-outline-secondary text-black rounded-pill px-4 border-2">Women</button>
-                        <button class="btn btn-outline-secondary text-black rounded-pill px-4 border-2">Accessories</button>
+                        <button class="btn btn-outline-primary px-4 rounded-pill">All</button>
+                        <button class="btn btn-outline-secondary hover:text-white rounded-pill px-4 border-2 ">Men</button>
+                        <button class="btn btn-outline-secondary hover:text-white rounded-pill px-4 border-2 ">Women</button>
+                        <button class="btn btn-outline-secondary hover:text-white rounded-pill px-4 border-2 ">Accessories</button>
                     </div>
                 </div>
+
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6">
                         <div class="product-card rounded-4 overflow-hidden">
                             <div class="position-relative">
-                                <img src="./man.jpg" alt="Product" class="w-100" style="height: 350px; object-fit: cover;">
+                                <img src="./pullover.jpg" alt="Product" class="w-100" style="height: 180px; object-fit: cover;">
                                 <div class="product-actions position-absolute top-0 end-0 p-3">
                                     <button class="btn btn-light rounded-circle mb-2"><i class="fas fa-heart"></i></button>
                                     <button class="btn btn-light rounded-circle"><i class="fas fa-shopping-cart"></i></button>
                                 </div>
-                                <span class="badge bg-danger position-absolute top-0 start-0 m-3">New</span>
+                                
                             </div>
                             <div class="p-4">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
@@ -294,16 +300,16 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="product-card rounded-4 overflow-hidden">
                             <div class="position-relative">
-                                <img src="./man.jpg" alt="Product" class="w-100" style="height: 350px; object-fit: cover;">
+                                <img src="./cross_bag.jpg" alt="Product" class="w-100" style="height: 180px; object-fit: cover;">
                                 <div class="product-actions position-absolute top-0 end-0 p-3">
                                     <button class="btn btn-light rounded-circle mb-2"><i class="fas fa-heart"></i></button>
                                     <button class="btn btn-light rounded-circle"><i class="fas fa-shopping-cart"></i></button>
                                 </div>
-                                <span class="badge bg-success position-absolute top-0 start-0 m-3">Sale</span>
+                                
                             </div>
                             <div class="p-4">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <h5 class="mb-0 fw-bold">Leather Crossbody Bag</h5>
+                                    <h5 class="mb-0 fw-bold">Crossbody Bag</h5>
                                     <span class="text-primary fw-bold">$129.99</span>
                                 </div>
                                 <p class="text-muted mb-3">Genuine leather with adjustable strap</p>
@@ -316,7 +322,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="product-card rounded-4 overflow-hidden">
                             <div class="position-relative">
-                                <img src="./man.jpg" alt="Product" class="w-100" style="height: 350px; object-fit: cover;">
+                                <img src="./LV.jpg" alt="Product" class="w-100" style="height: 180px; object-fit: cover;">
                                 <div class="product-actions position-absolute top-0 end-0 p-3">
                                     <button class="btn btn-light rounded-circle mb-2"><i class="fas fa-heart"></i></button>
                                     <button class="btn btn-light rounded-circle"><i class="fas fa-shopping-cart"></i></button>
@@ -340,12 +346,12 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="product-card rounded-4 overflow-hidden">
                             <div class="position-relative">
-                                <img src="./man.jpg" alt="Product" class="w-100" style="height: 350px; object-fit: cover;">
+                                <img src="./0eff7ad13fe189a43556f380a4801207.jpg" alt="Product" class="w-100" style="height: 180px; object-fit: cover;">
                                 <div class="product-actions position-absolute top-0 end-0 p-3">
                                     <button class="btn btn-light rounded-circle mb-2"><i class="fas fa-heart"></i></button>
                                     <button class="btn btn-light rounded-circle"><i class="fas fa-shopping-cart"></i></button>
                                 </div>
-                                <span class="badge bg-warning position-absolute top-0 start-0 m-3">Limited</span>
+                                
                             </div>
                             <div class="p-4">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
@@ -362,7 +368,66 @@
                 </div>
             </div>
         </div>
+ 
+        <div class="container-fluid py-5 bg-dark text-light ">
+            <div class="container py-5">
+              <div class="row g-4">
+          
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <span class="fs-2 text-primary me-2"><i class="fa-solid fa-shirt"></i></span>
+                      <h3 class="fs-4 fw-bold text-white m-0">Fashion Fusion</h3>
+                    </div>
 
+                    <p class="fs-6">Elevating style through quality fashion and exceptional service.</p>
+                    <div class="d-flex gap-3 mt-3">
+                      <a href="#" class="text-light text-decoration-none"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="text-light text-decoration-none"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="text-light text-decoration-none"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="text-light text-decoration-none"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                  </div>
+                </div>
+          
+               
+                <div class="col-12 col-md-6 col-lg-3">
+                  <h4 class="h6 fs-3 fw-semibold text-white mb-3">Quick Links</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-light text-decoration-none">New Arrivals</a></li>
+                    <li class="mb-2"><a href="#" class="text-light text-decoration-none">Best Sellers</a></li>
+                    <li class="mb-2"><a href="#" class="text-light text-decoration-none">Collections</a></li>
+                    <li class="mb-2"><a href="#" class="text-light text-decoration-none">Sales</a></li>
+                  </ul>
+                </div>
+          
+                
+                <div class="col-12 col-md-6 col-lg-3">
+                  <h4 class="h6 fs-3 fw-semibold text-white mb-3">Quick Links</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+                    <li class="mb-2"><a href="#" class="text-light text-decoration-none">Terms of Service</a></li>
+                    <li class="mb-2"><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+                  </ul>
+                </div>
+          
+                
+                <div class="col-12 col-md-6 col-lg-3">
+                  <h4 class="h6 fs-3 fw-semibold text-white mb-3">Stay Updated</h4>
+                  <p class="small mb-3">Subscribe to our newsletter for the latest updates and offers.</p>
+                  <form>
+                    <div class="mb-2">
+                      <input type="email" class="form-control bg-white fs-6 text-black border-secondary ps-4 " placeholder="Your email address">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                  </form>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+          
     </div>
 </body>
 </html>
+
