@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Fusion</title>
+    <link rel="icon" type="image/png"  href="favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+
+            body, input, button, textarea {
+                font-family: 'Poppins', sans-serif;
+                overflow: hidden;
+            }
+
+            .image_login{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .icon{
+                color: #2563eb;
+                font-size: 30px;
+            }
+
+            .heading{
+                font-weight: bold;
+                font-size: 40px;
+                margin-left: 4rem;
+                margin-top: -50px;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .header{
+                padding: 20px;
+            }
+
+            .form-container{
+                position: relative;
+                top: 50px;
+                padding-top: 40px;
+                padding: 4rem;
+                height: 100vh;
+                border: none;
+            }
+
+            .button-blue{
+                background-color: white;
+                color: #2563eb;
+                border: 1px solid #ccc;
+                font-weight: 600;
+            }
+
+            input::placeholder{
+                font-size: 14px;
+            }
+
+            form pre{
+                font-size: 14px;
+                font-weight: 500;
+                margin: 1rem 0;
+            }
+
+            .form-container button {
+                border-radius: 7px;
+                width: 100%;
+                padding: 0.75rem;
+                margin-bottom: 0.5rem;
+                background-color: #2563eb;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-weight: 600;
+            }
+
+            .form-container .button1{
+                margin-top: 30px;
+            }
+
+            .form-container .button2, .form-container .button3{
+                background-color: white;
+                border: 1px solid rgb(145, 145, 145);
+                color: #2563eb;
+            }
+
+            .form-container input {
+                border-radius: 7px;
+                padding: 1.5rem 0.75rem;
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            .form-container input::placeholder {
+                font-size: 14px;
+            }
+
+            .form-container input:focus::placeholder{
+                    transform: translateY(-10px);
+                    transition: all 0.3s ease-in-out;
+            } 
+
+            .form-container h1{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+            }
+
+            .form-container p{
+                color: #b1b0b0;
+                margin-bottom: 40px;
+            }
+
+    </style>
+</head>
+<body>
+        <div class="grid-x">
+
+            <aside class="cell medium-6 large-5">
+                <div class="header padding-2">
+                    <span class="icon"><i class="fa-solid fa-shirt"></i></span>
+                    <h1 class="heading">Fashion Fusion</h1>
+                </div>
+                <img src='Loginpage.jpg' alt="Login_illustration"  class="image_login">
+            </aside>
+
+            <div class="cell medium-6 large-7">
+                <form action="" class="form-container callout text-center">
+                    <h1 class="text-2xl font-bold">Login to Fashion Fusion</h1>
+                    <p class="margin-bottom-2 ">
+                        Enter your account credentials so as to access your account <br>
+                        details  and preview of your dashboard and unlimited free services
+                    </p>
+
+                    <input type="email" placeholder="Enter your email" class="input-group-field margin-bottom-1">
+                    <input type="password" placeholder="Enter your password" class="input-group-field margin-bottom-2">
+
+                    <button type="submit" class="button1 expanded button-blue margin-bottom-1">Login</button>
+                    <pre>                         OR                           </pre>
+                    <button type="submit" class="button2 expanded button-white margin-bottom-1">Login with Google</button><br>
+                    <button type="submit" class="button3 expanded button-white">Login with Apple</button>
+                </form>
+            </div>
+        </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
+</body>
+</html>
